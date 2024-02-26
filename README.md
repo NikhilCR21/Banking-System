@@ -1,4 +1,4 @@
-The provided code snippet represents a simplified banking system, encapsulating the functionality within a Python class named Bankaccount. Here's a more detailed overview of its components and how they work together:
+The provided code represents a simplified banking system, encapsulating the functionality within a Python class named Bankaccount:
 
 Core Components:
 1. Bankaccount Class:
@@ -17,10 +17,4 @@ Change PIN: Offers the option to change the account's password (PIN).
 Cancel Transaction: Exits the banking session, using sys.exit() to terminate the program.
 5. New User Registration:
 New users are prompted to enter their name and set a password. The system then generates a random account number and initializes the account with a zero balance. This information is added to the Account dictionary.
-6. Data Persistence (update_account_details):
-After each transaction or account update, this method writes the current state of the Account dictionary to the account_details.py file, ensuring that changes are saved between sessions.
-Design and Functionality Notes:
-Security and Efficiency: The approach to handling passwords and account details, as well as the method of persisting data (writing to a Python file), is simplistic and not secure or efficient for real-world applications. In practice, sensitive data should be encrypted, and a database system should be used for storage.
-Recursion in __init__: The recursive call to self.__init__() for handling invalid input is unconventional and potentially problematic. A while loop would be a safer choice to prompt the user until valid input is received.
-Password Re-entry: The code asks for a password twice during new account creation but doesn't verify if they match, which is a typical practice in systems that require a password setup.
-Error Handling: The code lacks comprehensive error handling, which is crucial for dealing with unexpected inputs or operational errors.
+.
